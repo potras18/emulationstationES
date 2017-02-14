@@ -65,7 +65,7 @@ GuiMenu::GuiMenu(Window* window) : GuiComponent(window), mMenu(window, "MAIN MEN
 			mWindow->pushGui(s);
 	});
 
-	addEntry("SOUND SETTINGS", 0x777777FF, true, 
+	addEntry("OPCIONES DE SONIDO", 0x777777FF, true, 
 		[this] {
 			auto s = new GuiSettings(mWindow, "SOUND SETTINGS");
 
@@ -84,7 +84,7 @@ GuiMenu::GuiMenu(Window* window) : GuiComponent(window), mMenu(window, "MAIN MEN
 			mWindow->pushGui(s);
 	});
 
-	addEntry("UI SETTINGS", 0x777777FF, true,
+	addEntry("OPCIONES DE INTERFACE", 0x777777FF, true,
 		[this] {
 			auto s = new GuiSettings(mWindow, "UI SETTINGS");
 
@@ -163,7 +163,7 @@ GuiMenu::GuiMenu(Window* window) : GuiComponent(window), mMenu(window, "MAIN MEN
 			mWindow->pushGui(s);
 	});
 
-	addEntry("OTHER SETTINGS", 0x777777FF, true,
+	addEntry("OTRAS OPCIONES", 0x777777FF, true,
 		[this] {
 			auto s = new GuiSettings(mWindow, "OTHER SETTINGS");
 
@@ -187,7 +187,7 @@ GuiMenu::GuiMenu(Window* window) : GuiComponent(window), mMenu(window, "MAIN MEN
 			mWindow->pushGui(s);
 	});
 
-	addEntry("CONFIGURE INPUT", 0x777777FF, true, 
+	addEntry("CONFIGURAR CONTROLES", 0x777777FF, true, 
 		[this] {
 			Window* window = mWindow;
 			window->pushGui(new GuiMsgBox(window, "ARE YOU SURE YOU WANT TO CONFIGURE INPUT?", "YES",
